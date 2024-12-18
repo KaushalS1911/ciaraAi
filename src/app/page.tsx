@@ -15,10 +15,10 @@ import {
 import AddIcon from '@mui/icons-material/Add';
 import CustomButton from "../components/button/Button";
 import {ChevronRight, Clear, Search} from "@mui/icons-material";
-import one from "../assets/images/playbook/one (2).png"
-import two from "../assets/images/playbook/two (2).png"
-import three from "../assets/images/playbook/three (2).png"
-import four from "../assets/images/playbook/four (2).png"
+import dartBoard from "../assets/images/playbook/dartBoard.png"
+import magnifyingGlass from "../assets/images/playbook/magnifyingGlass.png"
+import moneyBag from "../assets/images/playbook/moneyBag.png"
+import shoppingBag from "../assets/images/playbook/shoppingBag.png"
 import head from "../assets/images/playbook/head.png"
 import {useRouter} from "next/navigation";
 
@@ -34,25 +34,25 @@ export default function Home() {
   };
   const playbookData = [
     {
-      icon: one,
+      icon: dartBoard,
       title: 'Free Trial Follow-up',
       description: 'Student completes free trial -> AI agent calls to get feedback',
       description1: 'and schedule demo call',
     },
     {
-      icon: two,
+      icon: magnifyingGlass,
       title: 'Lead Qualification Router',
       description: 'New lead submits inquiry -> AI agent evaluates requirements',
       description1: 'and assigns to best sales rep',
     },
     {
-      icon: three,
+      icon: moneyBag,
       title: 'Price Quote Follow-up',
       description: 'Price quote sent 24h ago -> AI agent checks decision status',
       description1: 'and addresses pricing questions',
     },
     {
-      icon: four,
+      icon: shoppingBag,
       title: 'Abandoned Cart Recovery',
       description: 'Course added to cart but not purchased -> AI agent sends',
       description1: 'personalized message with course benefits',

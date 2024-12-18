@@ -73,152 +73,12 @@ export default function Home() {
         </Box>
       </Box>
       <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-        {/*<Dialog*/}
-        {/*    open={Boolean(open)}*/}
-        {/*    onClose={handleClose}*/}
-        {/*    maxWidth="lg"*/}
-        {/*    fullWidth*/}
-        {/*    sx={{borderRadius:20,overflow:"hidden"}}*/}
-        {/*>*/}
-        {/*  <DialogTitle>*/}
-        {/*    <Box sx={{py:2,borderBottom: "1px solid #F2F2F2",display:'flex',alignItems:"center",justifyContent:'space-between'}}>*/}
-        {/*      <Box sx={{display:'flex',alignItems:"center"}}>*/}
-        {/*        <Box>*/}
-        {/*          <Image src={head} alt={"head"} />*/}
-        {/*        </Box>*/}
-        {/*        <Box>*/}
-        {/*          <Typography variant="h7" color={"header"} fontWeight="600">*/}
-        {/*            Create a New Playbook*/}
-        {/*          </Typography>*/}
-        {/*          <Typography sx={{color:'deta',fontSize:13}}>Pick from our templates or build from scratch</Typography>*/}
-        {/*        </Box>*/}
-        {/*      </Box>*/}
-        {/*      <Box sx={{cursor:'pointer'}} onClick={handleClose}>*/}
-        {/*        <Clear />*/}
-        {/*      </Box>*/}
-        {/*    </Box>*/}
-        {/*  </DialogTitle>*/}
-        {/*  <DialogContent sx={{paddingX:1}}>*/}
-        {/*    <Box sx={{ display: "flex", height: "70vh" }}>*/}
-        {/*      <Box sx={{ width: "25%", borderRight: "1px solid #F2F2F2", padding: 1 }}>*/}
-        {/*        <Typography color={'deta'} mb={2}>*/}
-        {/*          Categories (5)*/}
-        {/*        </Typography>*/}
-        {/*        <List>*/}
-        {/*          {categories.map((category, index) => (*/}
-        {/*              <ListItem*/}
-        {/*                  key={index}*/}
-        {/*                  // button*/}
-        {/*                  selected={selectedIndex === index}*/}
-        {/*                  onClick={() => handleListItemClick(index)}*/}
-        {/*                  sx={{*/}
-        {/*                    display: "flex",*/}
-        {/*                    alignItems: "center",*/}
-        {/*                    backgroundColor: selectedIndex === index ? "#F0F0F0" : "transparent",*/}
-        {/*                    "&:hover": {*/}
-        {/*                      backgroundColor: selectedIndex === index ? "#F0F0F0" : "#F7F7F7",*/}
-        {/*                    },*/}
-        {/*                    cursor:'pointer'*/}
-        {/*                  }}>*/}
-        {/*                <ListItemText style={{color:"header !important"}} primary={category} />*/}
-        {/*                <ListItemSecondaryAction>*/}
-        {/*                  /!*<IconButton edge="end">*!/*/}
-        {/*                  <ChevronRight />*/}
-        {/*                  /!*</IconButton>*!/*/}
-        {/*                </ListItemSecondaryAction>*/}
-        {/*              </ListItem>*/}
-
-        {/*          ))}*/}
-        {/*        </List>*/}
-        {/*        <CustomButton*/}
-        {/*            startIcon={<AddIcon />}*/}
-        {/*            variant="contained"*/}
-        {/*            sx={{ marginTop: 2 }}*/}
-        {/*            fullWidth*/}
-        {/*            onClick={() => router.push('/playbook')}*/}
-        {/*        >*/}
-        {/*          Start from scratch*/}
-        {/*        </CustomButton>*/}
-        {/*      </Box>*/}
-
-
-        {/*      <Box sx={{ flex: 1, padding: 4 }}>*/}
-        {/*        <TextField*/}
-        {/*            variant="outlined"*/}
-        {/*            placeholder="Search a template by name, trigger or action"*/}
-        {/*            fullWidth*/}
-        {/*            InputProps={{*/}
-        {/*              startAdornment: <Search sx={{ mr: 1 }} />,*/}
-        {/*            }}*/}
-        {/*            sx={{*/}
-        {/*              mb: 4,*/}
-        {/*              "& input": {*/}
-        {/*                height: 7,*/}
-        {/*              },*/}
-        {/*              "& .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline": {*/}
-        {/*                borderColor: "#667085"*/}
-        {/*              },*/}
-        {/*              "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {*/}
-        {/*                borderColor: "#334155",*/}
-        {/*              },*/}
-        {/*            }}*/}
-        {/*        />*/}
-        {/*        <Typography variant={'h7'} color={"header"} fontWeight="600">*/}
-        {/*          Lead Generation & Sales*/}
-        {/*        </Typography>*/}
-        {/*        <Box sx={{mt:2}}>*/}
-        {/*          {playbookData.map((data,ind) => (*/}
-        {/*              <Box key={ind}>*/}
-        {/*                <Box*/}
-        {/*                    sx={{*/}
-        {/*                      display: "flex",*/}
-        {/*                      justifyContent: "space-between",*/}
-        {/*                      alignItems: "center",*/}
-        {/*                      border: "1px solid #F2F2F2",*/}
-        {/*                      borderRadius: 2,*/}
-        {/*                      padding: 2,*/}
-        {/*                      mb: 2,*/}
-        {/*                    }}*/}
-        {/*                >*/}
-        {/*                  <Box display="flex">*/}
-        {/*                    <Box mr={2}> <Image src={data.icon} alt={"head"} /></Box>*/}
-        {/*                    <Box>*/}
-        {/*                      <Typography variant="subtitle1" color={"header"} fontWeight="600">*/}
-        {/*                        {data.title}*/}
-        {/*                      </Typography>*/}
-        {/*                      <Typography variant="body2" color={"deta"} color="text.secondary">*/}
-        {/*                        {data.description}*/}
-        {/*                      </Typography>*/}
-        {/*                      <Typography variant="body2" color={"deta"} color="text.secondary">*/}
-        {/*                        {data.description1}*/}
-        {/*                      </Typography>*/}
-        {/*                    </Box>*/}
-        {/*                  </Box>*/}
-        {/*                  <CustomButton variant="outlined" size="small">*/}
-        {/*                    Set up*/}
-        {/*                  </CustomButton>*/}
-        {/*                </Box>*/}
-        {/*              </Box>*/}
-        {/*          ))}*/}
-        {/*        </Box>*/}
-        {/*      </Box>*/}
-        {/*    </Box>*/}
-        {/*  </DialogContent>*/}
-        {/*</Dialog>*/}
         <Dialog
             open={Boolean(open)}
             onClose={handleClose}
             maxWidth="lg"
             fullWidth
     sx={{borderRadius:20,overflow:"hidden"}}
-            //  sx={{
-            //   borderRadius: 2,
-            //   overflow: "hidden",
-            //   "& .MuiPaper-root": {
-            //     width: "100%",
-            //     maxWidth: "100%",
-            //   },
-            // }}
         >
           <DialogTitle>
             <Box
@@ -343,7 +203,7 @@ export default function Home() {
                     }}
                 />
                 <Typography variant={"h7"} color={"header"} fontWeight="600">
-                  Lead Generation & Sales
+                    {selectedIndex == 0 ? 'Lead Generation & Sales' : selectedIndex == 1 ? "Agent Management" : selectedIndex == 2 ? "Engagement & Follow-ups" : "Meeting & Schedule" }
                 </Typography>
                 <Box sx={{ mt: 2 }}>
                   {playbookData.map((data, ind) => (

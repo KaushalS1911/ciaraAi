@@ -3,18 +3,17 @@ import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
 import MainLayout from "../layout/MainLayout";
 import theme from "../components/theme/theme";
+import {Inter} from 'next/font/google'
 import {ThemeProvider} from "@mui/material";
 import {usePathname, useRouter} from "next/navigation";
 import PlaybookHeader from "../components/playboo-header/PlaybookHeader";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
+const inter = Inter({
+    subsets: ['latin'],
+    weight: [
+        '100', '200', '300', '400', '500', '600', '700', '800', '900'
+    ],
+    variable: '--font-inter'
 });
 
 export default function RootLayout({
@@ -25,7 +24,7 @@ export default function RootLayout({
     const slug = usePathname()
     return (
         <html lang="en">
-        <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <body className={inter.variable}>
         <ThemeProvider theme={theme}>
             {slug == "/playbook" ?
                 <>

@@ -4,19 +4,19 @@ import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import CustomButton from "../button/Button";
 import {useRouter} from "next/navigation";
 
-function PlaybookHeader(props) {
+function PlaybookHeader() {
     const router = useRouter()
     return (
         <>
-            <Box display={"flex"} justifyContent={"space-between"} alignItems={"center"} p={2} >
+            <Box display={"flex"} justifyContent={"space-between"} alignItems={"center"} p={2} sx={{height: '67px'}}>
                 <Box onClick={() => router.push('/')} sx={{cursor:'pointer'}}><KeyboardBackspaceIcon /></Box>
-                <Box>Untitled Playbook</Box>
+                <Box sx={{fontSize: 20}}>Untitled Playbook</Box>
                 <Box>
                     <CustomButton
                         variant="contained"
                         fullWidth
                     >
-                        Active
+                        Activate
                     </CustomButton>
                 </Box>
             </Box>

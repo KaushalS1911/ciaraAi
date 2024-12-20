@@ -30,7 +30,7 @@ const Header: React.FC<HeaderProps> = ({ handleDrawerToggle }) => {
             >
                 <MenuIcon />
             </IconButton>
-            <Typography variant="h6" noWrap component="div" sx={{fontSize: 16,color: 'darkBlue'}}>
+            <Typography variant="h6" noWrap sx={{fontSize: 16,color: 'darkBlue'}}>
                 Workflows
             </Typography>
         </Box>

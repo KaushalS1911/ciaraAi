@@ -24,7 +24,7 @@ export default function RootLayout({
     const slug = usePathname()
     return (
         <html lang="en">
-        <body className={inter.variable}>
+        <body className={inter.variable} cz-shortcut-listen="true">
         <ThemeProvider theme={theme}>
             {slug == "/playbook" ?
                 <>

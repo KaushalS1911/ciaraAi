@@ -231,7 +231,7 @@ export default function Home() {
                                         },
                                     }}
                                 />
-                            <Box sx={{overflowY:"scroll",height:'100%',pb:4,pr:1}} className={"scrollbar"}>
+                            <Box sx={{overflowY:"scroll",height:'100%',pb: {sm:4},pr:1}} className={"scrollbar"}>
                                 <Typography variant={"h7"} color={"blue"} fontWeight="500" sx={{fontSize: 20}}>
                                     {selectedIndex == 0 ? 'Lead Generation & Sales' : selectedIndex == 1 ? "Agent Management" : selectedIndex == 2 ? "Engagement & Follow-ups" : "Meeting & Schedule"}
                                 </Typography>
@@ -281,7 +281,7 @@ export default function Home() {
                                                 </Box>
                                                 <Box sx={{display: 'flex',justifyContent: 'right',width: {xs:'100%',sm: 'auto'}}}>
                                                     <CustomButton variant="outlined" size="small"
-                                                                  sx={{fontSize: " 14",textWrap: 'nowrap'}}>
+                                                                  sx={{fontSize: " 14",textWrap: 'nowrap'}} onClick={() => router.push("/playbook")}>
                                                         Set up
                                                     </CustomButton>
                                                 </Box>

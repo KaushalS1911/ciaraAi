@@ -40,20 +40,28 @@ a {
     color-scheme: dark;
   }
 }
-.scrollbar::-webkit-scrollbar {
-  width: 6px;
+/* Initial state: hide the scrollbar */
+.scrollbar {
+  overflow: hidden;  /* Hide scrollbar by default */
 }
 
+/* Show scrollbar when hovering over the element */
+.scrollbar:hover {
+  overflow: auto;  /* Show scrollbar on hover */
+}
+
+/* Styling the scrollbar */
 .scrollbar::-webkit-scrollbar {
+  width: 6px;
   height: 6px;
 }
 
-.scrollbar::-webkit-scrollbar-thumb {
-  background-color: rgba(136, 136, 136,0.5);
+.scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(136, 136, 136, 0.5);
   border-radius: 10px;
 }
 
-.scrollbar::-webkit-scrollbar-track {
+.scrollbar:hover::-webkit-scrollbar-track {
   background: #fff;
   border-radius: 10px;
 }

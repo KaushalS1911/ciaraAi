@@ -56,6 +56,29 @@ export default function Home() {
             title: 'Abandoned Cart Recovery',
             description: 'Course added to cart but not purchased -> AI agent sends',
             description1: 'personalized message with course benefits',
+        },{
+            icon: dartBoard,
+            title: 'Free Trial Follow-up',
+            description: 'Student completes free trial -> AI agent calls to get feedback',
+            description1: 'and schedule demo call',
+        },
+        {
+            icon: magnifyingGlass,
+            title: 'Lead Qualification Router',
+            description: 'New lead submits inquiry -> AI agent evaluates requirements',
+            description1: 'and assigns to best sales rep',
+        },
+        {
+            icon: moneyBag,
+            title: 'Price Quote Follow-up',
+            description: 'Price quote sent 24h ago -> AI agent checks decision status',
+            description1: 'and addresses pricing questions',
+        },
+        {
+            icon: shoppingBag,
+            title: 'Abandoned Cart Recovery',
+            description: 'Course added to cart but not purchased -> AI agent sends',
+            description1: 'personalized message with course benefits',
         },
     ];
     return (
@@ -130,6 +153,7 @@ export default function Home() {
                                 display: "flex",
                                 flexDirection: {xs: "column", sm: "row"},
                                 height: {xs: "auto", sm: "70vh"},
+                                overflowY:'hidden'
                             }}
                         >
                             <Box
@@ -207,6 +231,7 @@ export default function Home() {
                                         },
                                     }}
                                 />
+                            <Box sx={{overflowY:"scroll",height:'100%',pb:4,pr:1}} className={"scrollbar"}>
                                 <Typography variant={"h7"} color={"blue"} fontWeight="500" sx={{fontSize: 20}}>
                                     {selectedIndex == 0 ? 'Lead Generation & Sales' : selectedIndex == 1 ? "Agent Management" : selectedIndex == 2 ? "Engagement & Follow-ups" : "Meeting & Schedule"}
                                 </Typography>
@@ -264,6 +289,7 @@ export default function Home() {
                                         </Box>
                                     ))}
                                 </Box>
+                            </Box>
                             </Box>
                         </Box>
                     </DialogContent>

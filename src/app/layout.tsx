@@ -6,7 +6,7 @@ import theme from "../components/theme/theme";
 import {Inter} from 'next/font/google'
 import {ThemeProvider} from "@mui/material";
 import {usePathname, useRouter} from "next/navigation";
-import PlaybookHeader from "../components/playboo-header/PlaybookHeader";
+import PlaybookHeader from "../components/playbook-header/PlaybookHeader";
 
 const inter = Inter({
     subsets: ['latin'],
